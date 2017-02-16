@@ -1,8 +1,12 @@
 //src/routes/index.js
 const router = require('express').Router();
 
+//setting template for frontpage
 router.get('/', (reg,res) => {
-  res.send("<h1>HOMEPAGE</h1>");
+  res.render('index',
+  {title: 'Loaner Tracker',
+   message: 'FARTS!'
+  });
 });
 
 
