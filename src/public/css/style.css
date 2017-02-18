@@ -5,3 +5,8 @@ h1 {
 .p-graph {
   color: red;
 }
+
+footer {
+  padding-top: 15%;
+  text-align: center;
+}
