@@ -14,6 +14,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 //set up express static server for css,js, and oher public facing files for frontend.
 app.use(express.static(path.join(__dirname,'/public')));
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));// redirect CSS bootstrap
 
 //display the data from routes/index.js
 app.use(router)
