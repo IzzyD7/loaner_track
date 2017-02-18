@@ -5,7 +5,7 @@ const router = require('express').Router();
 router.get('/', (reg,res) => {
   res.render('index',
   {title: 'Loaner Tracker',
-   message: 'FARTS!'
+   message: 'FARTS!',
   });
 });
 
