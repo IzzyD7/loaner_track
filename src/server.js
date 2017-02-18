@@ -12,11 +12,10 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-//set up express static server for css,js, and oher public facing files for frontend.
+//set up express static server for css,js, and oher public facing files for frontend. Also set up static for node_modules
 app.use(express.static(path.join(__dirname,'/public')));
-app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
-app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
-app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));// redirect CSS bootstrap
+app.use('/node_modules',express.static(path.join(__dirname,'/node_modules')));
+
 
 //display the data from routes/index.js
 app.use(router)
