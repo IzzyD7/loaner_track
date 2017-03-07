@@ -2,12 +2,14 @@
 const router = require('express').Router();
 
 //setting template for frontpage
-router.get('/', (reg,res) => {
+router.get('/', (req,res) => {
   res.render('index',
   {title: 'Loaner Tracker',
    message: 'FARTS!',
   });
 });
+
+
 
 
 
