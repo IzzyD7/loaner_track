@@ -2,11 +2,11 @@ h1 {
   color: yellow;
 }
 
-.p-graph {
-  color: red;
-}
-
 footer {
   padding-top: 15%;
   text-align: center;
+}
+
+.p-graph {
+  color: red;
 }
