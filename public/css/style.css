@@ -1,12 +1,40 @@
-h1 {
-  color: yellow;
+/***FONTS FOR PROGRAM****/
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald'), url('../fonts/Oswald-Regular.ttf');
 }
 
-footer {
-  padding-top: 15%;
+@font-face {
+  font-family: ShareTechMono;
+  font-style: normal;
+  font-weight: 400;
+  src: local('ShareTechMono'), url('../fonts/ShareTechMono-Regular.ttf');
+}
+
+body {
+  background: grey;
+  background: linear-gradient(grey, white);
+}
+
+h1 {
+  font-family: ShareTechMono;
   text-align: center;
+  padding-bottom:3.5% ;
+  font-size: 4em;
 }
 
 .p-graph {
   color: red;
+}
+
+.status-graph {
+  height: 450px;
+  width: 450px;
+}
+
+footer {
+  padding-top: 2%;
+  text-align: center;
 }

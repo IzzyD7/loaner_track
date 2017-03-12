@@ -1,25 +1,26 @@
-
-  {
-  "name": "loanerpc1"
-  "model": "840G1"
-  "status": "out"
+[
+  [
+  "name": "loanerpc1",
+  "model": "840G1",
+  "status": "out",
   "client": ""
-  },
-  {
-  "name": "loanerpc2"
-  "model": "840G2"
-  "status": "out"
+  ],
+  [
+  "name": "loanerpc2",
+  "model": "840G2",
+  "status": "out",
   "client": ""
-  },
-  {
-  "name": "loanerpc3"
-  "model": "840G1"
-  "status": "in"
+  ],
+  [
+  "name": "loanerpc3",
+  "model": "840G1",
+  "status": "in",
   "client": ""
-  },
-  {
-  "name": "loanerpc4"
-  "model": "840G1"
-  "status": "out"
+  ],
+  [
+  "name": "loanerpc4",
+  "model": "840G1",
+  "status": "out",
   "client": ""
-  }
+  ]
+]
