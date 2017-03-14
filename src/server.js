@@ -2,12 +2,18 @@
 const express = require('express');
 const config = require("./config");
 const router = require('./routes');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const path = require('path');
+const mongoose = require('mongoose');
 
+//Connect to MongoDB. Create and use as defined in config
+mongoose.connect(`mongodb://${config.db.host}/${config.db.dbName}`);
 
 //set APP variable  as express in order to use set up apps
 const app = express();
+
+// Import all models
+require('./models/file.modle.js');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded

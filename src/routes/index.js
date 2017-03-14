@@ -1,5 +1,11 @@
 //src/routes/index.js
+const mongoose = require('mongoose');
 const router = require('express').Router();
+
+
+module.exports = router;
+
+
 
 //setting template for frontpage
 router.get('/', (req,res) => {
@@ -10,9 +16,13 @@ router.get('/', (req,res) => {
 });
 
 
+router.get('/inv', (req,res)=> {
+  mongoose.model('Inv').find({}, function(err, loaners) {
+    if (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
 
-
-
-
-
-module.exports = router;
+    res.json(loaners);
+  });
+});
