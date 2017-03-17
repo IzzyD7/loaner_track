@@ -13,17 +13,29 @@
   src: local('ShareTechMono'), url('../fonts/ShareTechMono-Regular.ttf');
 }
 
+/****Basic styling per tags****/
+
 body {
+  font-family: Oswald;
   background: grey;
   background: linear-gradient(grey, white);
 }
 
 h1 {
   font-family: ShareTechMono;
+  text-shadow: 2px 2px 8px white;
   text-align: center;
   padding-bottom:3.5% ;
   font-size: 4em;
 }
+
+footer {
+  padding-top: 2%;
+  text-shadow: 2px 2px 8px grey;
+  text-align: center;
+}
+
+/****Class Stylings****/
 
 .p-graph {
   color: red;
@@ -32,9 +44,4 @@ h1 {
 .status-graph {
   height: 450px;
   width: 450px;
-}
-
-footer {
-  padding-top: 2%;
-  text-align: center;
 }
