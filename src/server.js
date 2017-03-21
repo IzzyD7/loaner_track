@@ -13,7 +13,7 @@ mongoose.connect(`mongodb://${config.db.host}/${config.db.dbName}`);
 const app = express();
 
 // Import all models
-require('./models/file.modle.js');
+require('./models/file.model.js');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded

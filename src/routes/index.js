@@ -1,6 +1,7 @@
 //src/routes/index.js
 const mongoose = require('mongoose');
 const router = require('express').Router();
+const invController = require("./controllers/file.controller");
 
 
 module.exports = router;
@@ -16,13 +17,17 @@ router.get('/', (req,res) => {
 });
 
 
-router.get('/inv', (req,res)=> {
-  mongoose.model('Inv').find({}, function(err, loaners) {
-    if (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
+// router.get('/inv', (req,res)=> {
+//   mongoose.model('Inv').find({}, function(err, loaners) {
+//     if (err) {
+//       console.log(err);
+//       res.status(500).json(err);
+//     }
+//
+//     res.json(loaners);
+//   });
+// });
 
-    res.json(loaners);
-  });
-});
+router.get('/inv', invController.list);
+router.get('/inv', invController.get);
+router.post('/inv', invController.create);
