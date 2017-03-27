@@ -28,6 +28,10 @@ router.get('/', (req,res) => {
 //   });
 // });
 
+router.param('loanerId', invController.getLoanerId);
 router.get('/inv', invController.list);
-router.get('/inv', invController.get);
 router.post('/inv', invController.create);
+router.get('/inv/:loanerId', invController.getLoaner);
+router.put('/inv/:loanerId', invController.update);
+router.post('/inv/:loanerId', invController.delete);
+router.post('/inv/:loanerId/statusIn', invController.statusIn);

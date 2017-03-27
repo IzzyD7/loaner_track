@@ -1,14 +1,29 @@
 const mongoose = require('mongoose');
-
-const invSchema = new mongoose.Schema({
-  name: String,
-  model: String,
-  client: String,
-  status: Boolean
-
+//defines database schema
+const InvSchema = new mongoose.Schema({
+  pcName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  model: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  client: {
+    type: String,
+    trim: true,
+    default:"Unassigned"
+  },
+  pcStatus: {
+    type: Boolean,
+    default: true
+  }
 });
 
-const Inv = mongoose.model('Inv', invSchema);
+//makes database accessible to other files
+const Inv = mongoose.model('Inv', InvSchema);
 
 // Seed the database if empty
 Inv.count({}, function(err, count) {
@@ -27,5 +42,6 @@ Inv.count({}, function(err, count) {
     console.log();
   });
 });
+
 
 module.exports = Inv;
