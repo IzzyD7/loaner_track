@@ -2,25 +2,25 @@ module.exports = [
   {
   "pcName": "loanerpc1",
   "model": "840G1",
-  "pcStatus": true,
+  "pcStatus": "In",
   "client": "Barb"
   },
   {
   "pcName": "loanerpc2",
   "model": "840G2",
-  "pcStatus": false,
+  "pcStatus": "Out",
   "client": "Winston"
   },
   {
   "pcName": "loanerpc3",
   "model": "840G1",
-  "pcStatus": false,
+  "pcStatus": "Out",
   "client": "Sam"
   },
   {
   "pcName": "loanerpc4",
   "model": "840G1",
-  "pcStatus": true,
+  "pcStatus": "In",
   "client": "Felicia"
   }
 ]

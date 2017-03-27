@@ -17,8 +17,8 @@ const InvSchema = new mongoose.Schema({
     default:"Unassigned"
   },
   pcStatus: {
-    type: Boolean,
-    default: true
+    type: String,
+    default: "In"
   }
 });
 

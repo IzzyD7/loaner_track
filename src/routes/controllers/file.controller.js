@@ -15,23 +15,8 @@ module.exports = {
     });
   },
 
-  // // Get a single file
-  // get: function(req, res, next) {
-  //   const fileId = req.params.fileId;
-  //   console.log(fileId);
-  //   Inv.findById(fileId, function(err, file) {
-  //     if (err) {
-  //       console.log(err);
-  //       res.status(500).json(err);
-  //     }
-  //
-  //     res.json(file);
-  //   });
-  // },
-
 //reusable code to get loaner by name
   getLoanerId: function (req,res,next,id) {
-    console.log(id);
     Inv.findById(id, function (err, doc){
       if(err) return next(err);
       if(!doc){
@@ -40,7 +25,6 @@ module.exports = {
         return next(err);
       }
       req.item = doc;
-      console.log(doc);
       return next();
 
     });
@@ -48,7 +32,6 @@ module.exports = {
 
 //GET single machine
   getLoaner: function (req,res,next) {
-    console.log("this ran");
     res.json(req.item);
   },
 
@@ -71,14 +54,7 @@ module.exports = {
   update: function(req,res,next) {
     // const loanerId = req.params.loanerId;
     const updatedLoaner = req.body;
-
-    // Inv.findById(loanerId, function(err,loaner) {
-    //   if (err){
-    //     console.log(err);
-    //     res.status(500).json(err);
-    //   }
-
-      req.item.pcName = updatedLoaner.name;
+      req.item.pcName = updatedLoaner.pcName;
       req.item.model = updatedLoaner.model;
       req.item.client = updatedLoaner.client;
 
@@ -88,19 +64,30 @@ module.exports = {
           res.status(500).json(err);
         }
         res.json(loaner);
-      });
-    // });
+    });
   },
 
   //Change Status
-  statusIn: function(req,res,next){
-    console.log(req.item.pcStatus);
-    if(req.item.pcStatus === true){
-      req.item.pcStatus = false;
+  loanerStatus: function(req,res,next){
+    if(req.item.pcStatus === "In"){
+      req.item.pcStatus = "Out";
+      req.item.save(function(err,loaner) {
+        if(err) {
+          console.log(err);
+          res.status(500).json(err);
+        }
+        res.json(loaner);
+      });
     } else {
-      req.item.pcStatus = true;
+      req.item.pcStatus = "In";
+      req.item.save(function(err,loaner) {
+        if(err) {
+          console.log(err);
+          res.status(500).json(err);
+        }
+        res.json(loaner);
+      });
     }
-    res.json(loanerId);
   },
 
   //Check out

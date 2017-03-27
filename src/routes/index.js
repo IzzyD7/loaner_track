@@ -16,22 +16,10 @@ router.get('/', (req,res) => {
   });
 });
 
-
-// router.get('/inv', (req,res)=> {
-//   mongoose.model('Inv').find({}, function(err, loaners) {
-//     if (err) {
-//       console.log(err);
-//       res.status(500).json(err);
-//     }
-//
-//     res.json(loaners);
-//   });
-// });
-
 router.param('loanerId', invController.getLoanerId);
 router.get('/inv', invController.list);
 router.post('/inv', invController.create);
 router.get('/inv/:loanerId', invController.getLoaner);
-router.put('/inv/:loanerId', invController.update);
-router.post('/inv/:loanerId', invController.delete);
-router.post('/inv/:loanerId/statusIn', invController.statusIn);
+router.post('/inv/:loanerId/update', invController.update);
+router.post('/inv/:loanerId/delete', invController.delete);
+router.post('/inv/:loanerId/status', invController.loanerStatus);
