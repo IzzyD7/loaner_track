@@ -6,16 +6,16 @@ const InvSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  model: {
-    type: String,
-    required: true,
-    trim: true
-  },
-  client: {
-    type: String,
-    trim: true,
-    default:"Unassigned"
-  },
+  // model: {
+  //   type: String,
+  //   required: true,
+  //   trim: true
+  // },
+  // client: {
+  //   type: String,
+  //   trim: true,
+  //   default:"Unassigned"
+  // },
   pcStatus: {
     type: String,
     default: "In"

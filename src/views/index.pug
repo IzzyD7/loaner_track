@@ -1,11 +1,15 @@
 doctype html
-html(ng-app="loanerInvApp")
+html(ng-app="myApp")
   head
     link(rel='stylesheet',href='/css/bootstrap.min.css', type='text/css')
     link(rel='stylesheet',href='/css/style.css', type='text/css')
-    script(src="/node_modules/angular/angular.min.js")
+    script(src="/node_modules/angular/angular.min.js") 
+    script(src="/js/module/app.module.js")
+    script(src="/js/module/loaner-list.module.js")
+    script(src="/js/component/loanerInv.component.js")
+    //-script(src="/js/angularScript.js")
     title=title
-    body  
+    body()  
       div()
         h1 Loaner Tracking Application
 
@@ -13,7 +17,7 @@ html(ng-app="loanerInvApp")
         div(class='col-md-6')
           img(src='/img/rebels.jpg' class='img-responsive img-circle center-block status-graph')
         div(class='col-md-6')
-          loan-inv
+          
     
       footer
         Built by Mordecai Designs &copy;2017

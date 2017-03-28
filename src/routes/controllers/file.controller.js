@@ -45,7 +45,7 @@ module.exports = {
         res.status(500).json(err);
       } else {
         res.json(newMachineModel);
-        console.log("Added the following to the database:"+newMachineModel);
+        res.send("Added the following to the database:"+newMachineModel);
       }
     });
   },
@@ -55,8 +55,8 @@ module.exports = {
     // const loanerId = req.params.loanerId;
     const updatedLoaner = req.body;
       req.item.pcName = updatedLoaner.pcName;
-      req.item.model = updatedLoaner.model;
-      req.item.client = updatedLoaner.client;
+      // req.item.model = updatedLoaner.model;
+      // req.item.client = updatedLoaner.client;
 
       req.item.save(function(err,loaner) {
         if(err) {

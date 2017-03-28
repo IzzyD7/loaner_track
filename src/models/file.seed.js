@@ -1,26 +1,26 @@
 module.exports = [
   {
   "pcName": "loanerpc1",
-  "model": "840G1",
+  // "model": "840G1",
   "pcStatus": "In",
-  "client": "Barb"
+  // "client": "Barb"
   },
   {
   "pcName": "loanerpc2",
-  "model": "840G2",
+  // "model": "840G2",
   "pcStatus": "Out",
-  "client": "Winston"
+  // "client": "Winston"
   },
   {
   "pcName": "loanerpc3",
-  "model": "840G1",
+  // "model": "840G1",
   "pcStatus": "Out",
-  "client": "Sam"
+  // "client": "Sam"
   },
   {
   "pcName": "loanerpc4",
-  "model": "840G1",
+  // "model": "840G1",
   "pcStatus": "In",
-  "client": "Felicia"
+  // "client": "Felicia"
   }
 ]
