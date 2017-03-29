@@ -39,7 +39,6 @@ Inv.count({}, function(err, count) {
     if (err) {
       throw err;
     }
-    console.log();
   });
 });
 

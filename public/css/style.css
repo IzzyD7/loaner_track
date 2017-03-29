@@ -34,6 +34,10 @@ h3{
   text-shadow: 2px 2px 8px white;
 }
 
+form {
+  align-content: center;
+}
+
 footer {
   padding-top: 2%;
   text-shadow: 2px 2px 8px white;
@@ -47,10 +51,21 @@ footer {
 }
 
 .status-graph {
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
 }
 
-status-button {
+.loaner-pc {
+  /*background-color: pink;*/
+  border-bottom: 1px dotted black;
+  /*background: linear-gradient(grey, lightgrey, grey);*/
+
+}
+
+/*.add-loaner{
+  color: red;
+}*/
+
+.status-button {
   align: right;
 }

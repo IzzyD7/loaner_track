@@ -3,20 +3,25 @@ html(ng-app="myApp")
   head
     link(rel='stylesheet',href='/css/bootstrap.min.css', type='text/css')
     link(rel='stylesheet',href='/css/style.css', type='text/css')
-    script(src="/node_modules/angular/angular.min.js") 
-    script(src="/js/module/app.module.js")
-    script(src="/js/module/loaner-list.module.js")
-    script(src="/js/component/loanerInv.component.js")
-    //-script(src="/js/angularScript.js")
+    script(src="/node_modules/angular/angular.min.js")
+    script(src="/node_modules/angular-route/angular-route.min.js")
+    script(src="/js/loanerInv.component.js")
+    script(src="/js/controllers/ListLoanerController.js")
+    //- script(src="/js/controllers/MainCtrl.js")
+    //- script(src="/js/controllers/LoanerCtrl.js")
+    //- script(src="/js/services/LoanerService.js")
+    //- script(src="/js/appRoutes")
+    //- script(src="/js/app.js")
     title=title
     body()  
       div()
         h1 Loaner Tracking Application
 
-      div(class='container')
+      div(class='container' ng-controller="ListLoanersController")
         div(class='col-md-6')
           img(src='/img/rebels.jpg' class='img-responsive img-circle center-block status-graph')
-        div(class='col-md-6')
+        div(class='col-md-6 center-block' ng-view)
+        //- div(class='center-block' ng-view)
           
     
       footer

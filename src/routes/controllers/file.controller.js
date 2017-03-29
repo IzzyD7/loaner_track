@@ -8,7 +8,8 @@ module.exports = {
     Inv.find({}, function(err,list) {
       if (err) {
         console.log(err);
-        res.status(500).json(err);
+        return res.status(500).json(err);
+
       }
 
       res.json(list);
@@ -42,10 +43,9 @@ module.exports = {
     newMachineModel.save(function (err) {
       if (err) {
         console.log(err);
-        res.status(500).json(err);
+        return res.status(500).json(err);
       } else {
         res.json(newMachineModel);
-        res.send("Added the following to the database:"+newMachineModel);
       }
     });
   },
