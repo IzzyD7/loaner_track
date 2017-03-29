@@ -26,7 +26,7 @@ h1 {
   text-shadow: 2px 2px 8px white;
   text-align: center;
   padding-bottom:3.5% ;
-  font-size: 4em;
+  font-size: 4.5em;
 }
 
 h3{
@@ -44,28 +44,32 @@ footer {
   text-align: center;
 }
 
+/****ID Stylings****/
+
 /****Class Stylings****/
-
-.p-graph {
-  color: red;
-}
-
 .status-graph {
   height: 400px;
   width: 400px;
 }
 
-.loaner-pc {
-  /*background-color: pink;*/
-  border-bottom: 1px dotted black;
-  /*background: linear-gradient(grey, lightgrey, grey);*/
+
+.add-loaner {
+  margin-top: 2%;
+}
+
+.update-text{
+  opacity: 0.5;
+}
+
+.loaner-area{
 
 }
 
-/*.add-loaner{
-  color: red;
-}*/
+.loaner-name {
+  font-family: ShareTechMono;
+  font-size: 2.5em;
+}
 
 .status-button {
-  align: right;
+  margin-top: 5%;
 }

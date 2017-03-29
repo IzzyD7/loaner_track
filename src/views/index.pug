@@ -7,20 +7,15 @@ html(ng-app="myApp")
     script(src="/node_modules/angular-route/angular-route.min.js")
     script(src="/js/loanerInv.component.js")
     script(src="/js/controllers/ListLoanerController.js")
-    //- script(src="/js/controllers/MainCtrl.js")
-    //- script(src="/js/controllers/LoanerCtrl.js")
-    //- script(src="/js/services/LoanerService.js")
-    //- script(src="/js/appRoutes")
-    //- script(src="/js/app.js")
     title=title
     body()  
       div()
         h1 Loaner Tracking Application
 
-      div(class='container' ng-controller="ListLoanersController")
+      div(class="" ng-controller="ListLoanersController")
         div(class='col-md-6')
-          img(src='/img/rebels.jpg' class='img-responsive img-circle center-block status-graph')
-        div(class='col-md-6 center-block' ng-view)
+          img(src='/img/rebels.jpg' class="img-responsive img-circle center-block status-graph")
+        div(class="col-md-6 center-block" ng-view)
         //- div(class='center-block' ng-view)
           
     

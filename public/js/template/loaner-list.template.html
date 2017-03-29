@@ -1,23 +1,23 @@
 
 <clickFunctions class="container">
+  <div class="text-center add-loaner">
+    <form>
+      <label for="add-loaner"><h4>Please add a loaner here -</h4> </label>
+      <input id="add-loaner" type="text" ng-model="newPcName" placeholder="PC Name"/>
+      <button ng-click="newPc()" type="submit">Add A Loaner</button>
+    </form>
+  </div>
     <div ng-repeat="loaner in data">
-      <div class="loaner-pc">
-        <span ng-model="id" ng-click="updateStatus()">{{loaner.pcName}}</span>
-
-        <span class="btn btn-success" ng-click="updateStatus(loaner._id)">{{loaner.pcStatus}}</span>
-        <form class="">
-          <input type="text" ng-model="loaner.pcName" placeholder="PC Name"/>
-          <button class="add-loaner" ng-click="updateLoaner(loaner)" type="submit">Update Name</button>
-        </form>
-
-        <button class="" ng-click="deleteLoaner(loaner._id)">Delete Loaner</button>
+      <div class="col-md-12 loaner-pc">
+        <div class="text-center col-md-8 col-xs-12">
+          <div class="loaner-name">{{loaner.pcName}}</div>
+          <form class="update-form">
+            <input class="update-text" type="text" ng-model="loaner.pcName"/>
+            <button class="" ng-click="updateLoaner(loaner)" type="submit">Update Name</button>
+            <button class="" ng-click="deleteLoaner(loaner._id)">Delete Loaner</button>
+          </form>
+        </div>
+        <div class="btn btn-success col-md-4 col-xs-12 btn-lg  status-button" ng-click="updateStatus(loaner._id)">{{loaner.pcStatus}}</div>
       </div>
-    </div>
-    <div>
-      <form class="col-md-6 center-block">
-        <label for="add-loaner">Please add a loaner here - </label>
-        <input id="add-loaner" type="text" ng-model="newPcName" placeholder="PC Name"/>
-        <button class="add-loaner" ng-click="newPc()" type="submit">Add A Loaner</button>
-      </form>
     </div>
 </clickFunctions>
