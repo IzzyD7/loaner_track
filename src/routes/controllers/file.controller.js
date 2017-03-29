@@ -23,6 +23,7 @@ module.exports = {
       if(!doc){
         err = new Error("Not Found");
         err.status = 404;
+        console.log(doc);
         return next(err);
       }
       req.item = doc;

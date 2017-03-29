@@ -37,6 +37,8 @@ myApp.controller("ListLoanersController", [
     };
 
     $scope.newPc = function() {
+      if(!$scope.newPcName){alert("Please enter in a valid computer name.");return $route.reload();
+      };
       var newMachine = {
         pcName: $scope.newPcName
       };
@@ -60,7 +62,7 @@ myApp.controller("ListLoanersController", [
     };
 
     $scope.updateLoaner = function(myUpdatedLoaner) {
-      if(myUpdatedLoaner.pcName === ''){return $route.reload();};
+      if(myUpdatedLoaner.pcName === ''){alert("Please enter a computer name.");return $route.reload();};
       $http({
         method: "POST",
         url: `http://localhost:8080/inv/${myUpdatedLoaner._id}/update`,
