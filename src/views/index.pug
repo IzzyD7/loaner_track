@@ -8,16 +8,16 @@ html(ng-app="myApp")
     script(src="/js/loanerInv.component.js")
     script(src="/js/controllers/ListLoanerController.js")
     title=title
-    body()  
-      div()
+    body(ng-controller="ListLoanersController")  
+      div(class="col-md-12")
         h1 Loaner Tracking Application
 
-      div(class="" ng-controller="ListLoanersController")
-        div(class='col-md-6 status-graph-div')
+      div(class="col-md-12 status-graph-div")
+        div(class='col-md-6')
           img(src='/img/rebels.jpg' class="img-responsive img-circle center-block status-graph")
         div(class="col-md-6 center-block" ng-view)
         //- div(class='center-block' ng-view)
           
     
-      footer
+      footer(class="col-md-12")
         Built by Mordecai Designs &copy;2017
