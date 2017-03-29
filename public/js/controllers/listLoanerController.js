@@ -60,8 +60,7 @@ myApp.controller("ListLoanersController", [
     };
 
     $scope.updateLoaner = function(myUpdatedLoaner) {
-
-
+      if(myUpdatedLoaner.pcName === ''){return;};
       $http({
         method: "POST",
         url: `http://localhost:8080/inv/${myUpdatedLoaner._id}/update`,
