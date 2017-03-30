@@ -10,13 +10,13 @@ Since this is a MEAN stack application, you will need to install a few different
 
 (windows users: Here is a helpful link to get MongoDB installed and set-up on your machine.[Link](https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f) - https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f)
 
-###Software packages handled by NPM:
-[MongooseJs](http://mongoosejs.com/)
-[ExpressJs](http://expressjs.com/)
-[AngularJs](http://angularjs.org/)
-[Jquery](https://jquery.com/)
-[Bootstrap](http://getbootstrap.com/)
-[PugJs](https://pugjs.org/api/getting-started.html)
+### Software packages handled by NPM:
+-[MongooseJs](http://mongoosejs.com/)
+-[ExpressJs](http://expressjs.com/)
+-[AngularJs](http://angularjs.org/)
+-[Jquery](https://jquery.com/)
+-[Bootstrap](http://getbootstrap.com/)
+-[PugJs](https://pugjs.org/api/getting-started.html)
 
 You will also need a console. I personally use Powershell.
 
@@ -37,7 +37,7 @@ The console will respond with the following ```THE FRONTEND SERVER IS LISTENING 
 
 ## Opening the application:
 
-After you have started the database and the node server, you can access the app by opening a browser and type "localhost:8080*"
+After you have started the database and the node server, you can access the app by opening a browser and type "localhost:8080"
 
 ## Future Functionality:
 -Updates to UX including color changing buttons for In/Out Status and modal notification for blank text entry.
