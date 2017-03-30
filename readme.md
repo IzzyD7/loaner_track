@@ -24,16 +24,28 @@ You will also need a console. I personally use Powershell.
 ## Installation:
 
 1. From your console, clone this repo onto your local machine.
-```https://github.com/IzzyD7/loaner_track.git```
-2. Switch to the directory ```loaner_track```
-```cd loaner_track```
+
+
+`https://github.com/IzzyD7/loaner_track.git`
+2. Switch to the directory `loaner_track`
+
+
+`cd loaner_track`
 3. Install dependencies with NPM
-```npm install```
+
+
+`npm install`
 4. Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
-```mongod```
-5. From the ```loaner_track``` directory, start the application.
-```node index.js```
-The console will respond with the following ```THE FRONTEND SERVER IS LISTENING ON PORT 8080!!!!"``` and you should see four initial records created for you database.
+
+
+`mongod'
+5. From the `loaner_track` directory, start the application.
+
+
+`node index.js'
+
+
+The console will respond with the following `THE FRONTEND SERVER IS LISTENING ON PORT 8080!!!!"` and you should see four initial records created for you database.
 
 ## Opening the application:
 
@@ -41,7 +53,11 @@ After you have started the database and the node server, you can access the app 
 
 ## Future Functionality:
 -Updates to UX including color changing buttons for In/Out Status and modal notification for blank text entry.
+
+
 -Graphical interface to show quick stats (total machines, status, models in loaner pool)
+
+
 -Added data tracking in database (client names, date of checkout, machine model)
 
 ## Contribution:
