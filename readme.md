@@ -49,7 +49,7 @@ npm install
 
 
 
-* Open a second console window and start MongoDB by starting the Mongo Daemon _(Windows Users: Please see link referenced above to set up environment variable for MongoDB. If environment variables are set for Windows, find the **.exe** and run:_ _**Example:**_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe` _)_ 
+* Open a second console window and start MongoDB by starting the Mongo Daemon _(Windows Users: Please see link referenced above to set up environment variable for MongoDB. If environment variables are set for Windows, find the **.exe** and run it._ _**Example:**_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe` _)_ 
 
 
 ```
