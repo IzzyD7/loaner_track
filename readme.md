@@ -72,7 +72,7 @@ The console will respond with the following `THE FRONTEND SERVER IS LISTENING ON
 After you have started the database and the node server, you can access the app by opening a browser and type "localhost:8080"
 
 ## Future Functionality:
--Updates to UX including color changing buttons for In/Out Status and modal notification for blank text entry.
+-Updates to UX including color changing buttons for In/Out Status and ~~modal notification for blank text entry when creating new machine~~.
 
 
 -Graphical interface to show quick stats (total machines, status, models in loaner pool)
