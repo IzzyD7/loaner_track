@@ -49,19 +49,14 @@ npm install
 
 
 
-* Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
+* Open a second console window and start MongoDB by starting the Mongo Daemon _(Windows Users: Please see link referenced above to set up environment variable for MongoDB. If environment variables are set for Windows, find the **.exe** and run:_ `mongod.exe`
+
+_Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe` _)_ 
 
 
 ```
 mongod
 ```
-
-
-_If environment variables are set for Windows, find the **.exe** and run_ `mongod.exe`
-
-_Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
-
-
 
 
 * From the `loaner_track` directory, start the application.
