@@ -47,10 +47,10 @@ You will also need a console. I personally use Powershell.
 `mongod`
 
 
-_If environment variables are set for Windows, find the .exe and run `mongod.exe`
+_If_ _environment_ _variables_ _are_ _set_ _for_ _Windows__,_ _find_ _the_ **_.exe_** _and_ _run_ `mongod.exe`
 
 
-Example: `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`_
+_Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
 
 5. From the `loaner_track` directory, start the application.
 
