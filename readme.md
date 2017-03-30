@@ -11,12 +11,12 @@ Since this is a MEAN stack application, you will need to install a few different
 (windows users: Here is a helpful link to get MongoDB installed and set-up on your machine.[Link](https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f) - https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f)
 
 ### Software packages handled by NPM:
--[MongooseJs](http://mongoosejs.com/)
--[ExpressJs](http://expressjs.com/)
--[AngularJs](http://angularjs.org/)
--[Jquery](https://jquery.com/)
--[Bootstrap](http://getbootstrap.com/)
--[PugJs](https://pugjs.org/api/getting-started.html)
+* [MongooseJs](http://mongoosejs.com/)
+* [ExpressJs](http://expressjs.com/)
+* [AngularJs](http://angularjs.org/)
+* [Jquery](https://jquery.com/)
+* [Bootstrap](http://getbootstrap.com/)
+* [PugJs](https://pugjs.org/api/getting-started.html)
 
 You will also need a console. I personally use Powershell.
 
