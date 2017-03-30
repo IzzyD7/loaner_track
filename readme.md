@@ -44,8 +44,13 @@ You will also need a console. I personally use Powershell.
 4. Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
 
 
-`mongod'
+`mongod`
 
+
+_If environment variables are set for Windows, find the .exe and run `mongod.exe`
+
+
+Example: `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`_
 
 5. From the `loaner_track` directory, start the application.
 
