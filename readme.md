@@ -6,9 +6,11 @@ Since this is a MEAN stack application, you will need to install a few different
 
 ### Download and install:
 [Node.js](http://nodejs.org/) - https://nodejs.org
+
+
 [MongoDb](http://www.mongodb.org/) - https://www.mongodb.com/
 
-(windows users: Here is a helpful link to get MongoDB installed and set-up on your machine.[Link](https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f) - https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f)
+_(Windows users: Here is a helpful link to get MongoDB installed and set-up on your machine. [Mongo Database setup on Windows](https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f))_
 
 ### Software packages handled by NPM:
 * [MongooseJs](http://mongoosejs.com/)
@@ -88,4 +90,4 @@ This project is licensed under the MIT License
 ## Thank You:
 * [Shauvon](https://github.com/ShauvonM) and [Aaron](https://github.com/aarontropy) for being amazing mentors and helping me when I got stuck.
 * [Micah](https://github.com/micahpotts) for working with me and being a good sounding board
-* [Code Louisville](https://www.codelouisville.org/) for providing a great program. 
+* [Code Louisville](https://www.codelouisville.org/) for providing a great program.
