@@ -35,10 +35,12 @@ You will also need a console. I personally use Powershell.
 `cd loaner_track`
 
 
+
 -Install dependencies with NPM
 
 
 `npm install`
+
 
 
 -Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
@@ -50,6 +52,8 @@ You will also need a console. I personally use Powershell.
 _If_ _environment_ _variables_ _are_ _set_ _for_ _Windows_, _find_ _the_ **_.exe_** _and_ _run_ `mongod.exe`
 
 _Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
+
+
 
 -From the `loaner_track` directory, start the application.
 
@@ -82,4 +86,6 @@ Feel free to contribute to this project.
 This project is licensed under the MIT License
 
 ## Thank You:
-[Shauvon](https://github.com/ShauvonM) and [Aaron](https://github.com/aarontropy) for being amazing mentors and helping me when I got stuck.
+* [Shauvon](https://github.com/ShauvonM) and [Aaron](https://github.com/aarontropy) for being amazing mentors and helping me when I got stuck.
+* [Micah](https://github.com/micahpotts) for working with me and being a good sounding board
+* [Code Louisville](https://www.codelouisville.org/) for providing a great program. 
