@@ -26,27 +26,35 @@ You will also need a console. I personally use Powershell.
 -From your console, clone this repo onto your local machine.
 
 
-`https://github.com/IzzyD7/loaner_track.git`
+```
+https://github.com/IzzyD7/loaner_track.git
+```
 
 
 -Switch to the directory `loaner_track`
 
 
-`cd loaner_track`
+```
+cd loaner_track
+```
 
 
 
 -Install dependencies with NPM
 
 
-`npm install`
+```
+npm install
+```
 
 
 
 -Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
 
 
-`mongod`
+```
+mongod
+```
 
 
 _If environment variables are set for Windows, find the **.exe** and run_ `mongod.exe`
@@ -58,7 +66,9 @@ _Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
 -From the `loaner_track` directory, start the application.
 
 
-`node index.js`
+```
+node index.js
+```
 
 
 The console will respond with the following `THE FRONTEND SERVER IS LISTENING ON PORT 8080!!!!"` and you should see four initial records created for you database.
