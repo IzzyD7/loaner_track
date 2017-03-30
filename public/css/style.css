@@ -18,7 +18,7 @@
 body {
   font-family: Oswald;
   background: black;
-  background: linear-gradient(grey, LightGrey);
+  background: linear-gradient(grey, lightgrey);
 }
 
 h1 {
@@ -29,8 +29,14 @@ h1 {
   font-size: 4.5em;
 }
 
-h4{
-  text-shadow: 2px 2px 8px white;
+h3,
+h4 {
+  text-shadow: 2px 2px 8px lightgrey;
+}
+
+
+p {
+  font-size: 1.5em;
 }
 
 form {
@@ -40,7 +46,7 @@ form {
 footer {
   /*padding-top: 2%;*/
   padding-bottom: 2%;
-  text-shadow: 2px 2px 8px grey;
+  text-shadow: 2px 2px 8px #637383;
   text-align: center;
 }
 
@@ -51,8 +57,8 @@ footer {
 
 /****.Class Stylings****/
 .status-graph-div {
-    /*padding-top: 20%;*/
-    /*padding-bottom: 15%;*/
+    padding-top: 5%;
+    padding-bottom: 15%;
 
 }
 
@@ -72,16 +78,23 @@ footer {
   opacity: 0.5;
 }
 
-.loaner-area{
-
-}
-
 .loaner-name {
   font-family: ShareTechMono;
   font-size: 2em;
   text-shadow: 2px 2px 8px #637383;
+  /*text-shadow: 2px 2px 8px #cedce7;*/
 }
 
 .status-button {
   margin-top: 5%;
+  text-shadow: 2px 2px 8px black;
+  background: radial-gradient(skyblue, blue);
 }
+
+/*.status-button-in {
+  background: radial-gradient(yellowgreen, green);
+}
+
+.status-button-out {
+  background: radial-gradient(#ff9380, red );
+}*/

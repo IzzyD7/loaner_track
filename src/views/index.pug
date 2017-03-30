@@ -12,11 +12,16 @@ html(ng-app="myApp")
       div(class="col-md-12")
         h1 Loaner Tracking Application
 
-      div(class="col-md-12 status-graph-div")
+      div(class="col-md-12")
         div(class='col-md-6')
-          img(src='/img/rebels.jpg' class="img-responsive img-circle center-block status-graph")
+          //-   img(src='/img/rebels.jpg' class="img-responsive img-rounded center-block status-graph")
+          div(class='col-md-6 col-md-offset-3 status-graph-div') 
+            h3 Instructions:
+            p To the left you will see a the list of machines in the loaner pool. If you need to expand your pool, you can add the machine name in the field at the top and it will be added with the default status of "In". To check machines in/out, just click on the corresponding blue button.
+            
+            p If you need to adjust the name of your machine, there is a field available to do so. Also next to that field, there is a delete button in case the machine needs to be removed from the loaner pool.
         div(class="col-md-6 center-block" ng-view)
-        //- div(class='center-block' ng-view)
+        //- Angular writes here
           
     
       footer(class="col-md-12")
