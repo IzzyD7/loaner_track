@@ -93,4 +93,4 @@ This project is licensed under the MIT License
 * [Shauvon](https://github.com/ShauvonM) and [Aaron](https://github.com/aarontropy) for being amazing mentors and helping me when I got stuck.
 * [Micah](https://github.com/micahpotts) for working with me and being a good sounding board
 * [Code Louisville](https://www.codelouisville.org/) for providing a great program.
-* [PurpleBooth](https://github.com/PurpleBooth) for providing a good README resource. 
+* [PurpleBooth](https://github.com/PurpleBooth) for providing a good README resource.
