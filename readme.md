@@ -23,36 +23,35 @@ You will also need a console. I personally use Powershell.
 
 ## Installation:
 
-1. From your console, clone this repo onto your local machine.
+-From your console, clone this repo onto your local machine.
 
 
 `https://github.com/IzzyD7/loaner_track.git`
 
 
-2. Switch to the directory `loaner_track`
+-Switch to the directory `loaner_track`
 
 
 `cd loaner_track`
 
 
-3. Install dependencies with NPM
+-Install dependencies with NPM
 
 
 `npm install`
 
 
-4. Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
+-Open a second console window and start MongoDB by starting the Mongo Daemon (Windows Users: Please see link referenced above to set up environment variable for MongoDB. )
 
 
 `mongod`
 
 
-_If_ _environment_ _variables_ _are_ _set_ _for_ _Windows__,_ _find_ _the_ **_.exe_** _and_ _run_ `mongod.exe`
-
+_If_ _environment_ _variables_ _are_ _set_ _for_ _Windows_, _find_ _the_ **_.exe_** _and_ _run_ `mongod.exe`
 
 _Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
 
-5. From the `loaner_track` directory, start the application.
+-From the `loaner_track` directory, start the application.
 
 
 `node index.js`
