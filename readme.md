@@ -5,10 +5,8 @@ With this simple inventory app, someone will be able to keep track of their stoc
 Since this is a MEAN stack application, you will need to install a few different pieces of software. There is are links to the packages that will need to be downloaded but otherwise NPM (a package management system that is installed as part of Node.js) will take care the dependencies.
 
 ### Download and install:
-[Node.js](http://nodejs.org/) - https://nodejs.org
-
-
-[MongoDb](http://www.mongodb.org/) - https://www.mongodb.com/
+* [Node.js](http://nodejs.org/) - https://nodejs.org
+* [MongoDb](http://www.mongodb.org/) - https://www.mongodb.com/
 
 _(Windows users: Here is a helpful link to get MongoDB installed and set-up on your machine. [Mongo Database setup on Windows](https://code.msdn.microsoft.com/Mongo-Database-setup-on-6963f46f))_
 
@@ -51,7 +49,7 @@ You will also need a console. I personally use Powershell.
 `mongod`
 
 
-_If_ _environment_ _variables_ _are_ _set_ _for_ _Windows_, _find_ _the_ **_.exe_** _and_ _run_ `mongod.exe`
+_If environment variables are set for Windows, find the **.exe** and run_ `mongod.exe`
 
 _Example:_ `C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe`
 
